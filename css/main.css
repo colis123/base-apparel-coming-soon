@@ -1,1 +1,66 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::after,
+* ::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: inherit;
+  padding: inherit;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.hero {
+  padding-left: 10rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.hero .info {
+  padding: 4rem 13rem 0 0;
+}
+
+.hero .info nav {
+  margin-bottom: 8rem;
+}
+
+.hero .info .information {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2.5rem;
+}
+
+.hero .info .information span {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #ce9696;
+  letter-spacing: 1.7rem;
+}
+
+.hero .info .information h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 1.7rem;
+}
+
+.hero .info .information p {
+  line-height: 1.8rem;
+}
+
+.hero .hero-image img {
+  width: 100%;
+  height: 100%;
+  background: center cover;
+}
+/*# sourceMappingURL=main.css.map */
