@@ -18,6 +18,11 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+main {
+  height: 100vh;
+  overflow: hidden;
+}
+
 //Main styling
 .hero {
   padding-left: 10rem;
@@ -35,6 +40,7 @@ body {
       display: grid;
       grid-template-columns: 1fr;
       grid-gap: 2.5rem;
+      position: relative;
 
       span {
         font-size: 3rem;
@@ -51,6 +57,37 @@ body {
 
       p {
         line-height: 1.8rem;
+        color: $desat-red;
+      }
+
+      form {
+        position: relative;
+
+        input {
+          padding: 1.1rem;
+          border-radius: 2rem;
+          width: 100%;
+          border: 1px solid $desat-red;
+          font-size: .9rem;
+
+          &::placeholder {
+            font-size: .9rem;
+            color: $desat-red;
+          }
+        }
+
+        button {
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 3.45rem;
+          width: 6rem;
+          border-radius: 6rem;
+          border: none;
+          background: $gradient-2;
+          cursor: pointer;
+          box-shadow: 0rem 1.5rem 2rem rgba(206, 150, 150, .4);
+        }
       }
     }
   }
@@ -58,8 +95,6 @@ body {
   .hero-image {
     img {
       width: 100%;
-      height: 100%;
-      background: center cover;
     }
   }
 }
