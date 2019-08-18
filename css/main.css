@@ -123,4 +123,40 @@ main {
   -ms-grid-column: 2;
   grid-area: image;
 }
+
+@media (max-width: 800px) {
+  main {
+    height: 100%;
+  }
+  .hero {
+        grid-template-areas: 'nav' 'image' 'info';
+    padding: 0;
+  }
+  .hero nav {
+    padding: 2.5rem 2.5rem 0 2.5rem;
+    margin: 0 0 2rem 0;
+  }
+  .hero .hero-image {
+    width: 100%;
+    height: 20rem;
+    background: url(../images/hero-mobile.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    margin-bottom: 4rem;
+  }
+  .hero .hero-image img {
+    display: none;
+  }
+  .hero .info {
+    padding: 0 2.5rem;
+    text-align: center;
+    margin-bottom: 5.5rem;
+  }
+  .hero .info h1,
+  .hero .info span {
+    font-size: 2rem;
+    letter-spacing: .7rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */

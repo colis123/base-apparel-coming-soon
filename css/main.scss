@@ -102,107 +102,53 @@ main {
     grid-area: image;
   }
 
-
 }
 
-//Main styling
-// .hero {
-//   padding-left: 10rem;
-//   display: grid;
-//   grid-template-columns: 1fr 38rem;
+@media (max-width: 800px) {
+  main {
+    height: 100%;
+  }
 
-//   .info {
-//     padding: 4rem 13rem 0 0;
+  .hero {
+    grid-template-areas:
+      'nav'
+      'image'
+      'info'
+    ;
 
-//     nav {
-//       margin-bottom: 8rem;
-//     }
+    padding: 0;
 
-//     .information {
-//       display: grid;
-//       grid-template-columns: 1fr;
-//       grid-gap: 2.5rem;
-//       position: relative;
+    nav {
+      padding: 2.5rem 2.5rem 0 2.5rem;
+      margin: 0 0 2rem 0;
+    }
 
-// span {
-//   font-size: 3rem;
-//   font-weight: 300;
-//   color: $desat-red;
-//   letter-spacing: 1.7rem;
-// }
+    .hero-image {
+      width: 100%;
+      height: 20rem;
+      background: url(../images/hero-mobile.jpg);
+      background-position: center;
+      background-repeat: none;
+      background-size: cover;
+      margin-bottom: 4rem;
 
-// h1 {
-//   font-size: 3rem;
-//   font-weight: 600;
-//   letter-spacing: 1.7rem;
-// }
+      img {
+        display: none;
+      }
+    }
 
-// p {
-//   line-height: 1.8rem;
-//   color: $desat-red;
-// }
+    .info {
+      padding: 0 2.5rem;
+      text-align: center;
+      margin-bottom: 5.5rem;
 
-// form {
-//   position: relative;
+      h1,
+      span {
+        font-size: 2rem;
+        letter-spacing: .7rem;
+      }
 
-//   input {
-//     padding: 1.1rem;
-//     border-radius: 2rem;
-//     width: 100%;
-//     border: 1px solid $desat-red;
-//     font-size: .9rem;
+    }
 
-//     &::placeholder {
-//       font-size: .9rem;
-//       color: $desat-red;
-//     }
-//   }
-
-//   button {
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     height: 3.45rem;
-//     width: 6rem;
-//     border-radius: 6rem;
-//     border: none;
-//     background: $gradient-2;
-//     cursor: pointer;
-//     box-shadow: 0rem 1.5rem 2rem rgba(206, 150, 150, .4);
-//   }
-// }
-// }
-//   }
-
-//   .hero-image {
-//     img {
-//       width: 100%;
-//     }
-//   }
-// }
-
-// @media (max-width: 780px) {
-//   .hero {
-//     grid-template-columns: 1fr;
-//     padding: 0;
-//     grid-template-areas:
-//       'nav'
-//       'image'
-//       'info';
-
-
-//     nav {
-//       grid-area: nav;
-//     }
-
-//     .hero-image>img {
-//       grid-area: image;
-//     }
-
-//     .information {
-//       grid-area: info;
-//     }
-//   }
-
-
-// }
+  }
+}
