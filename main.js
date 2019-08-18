@@ -18,6 +18,7 @@ function validateEmail(e) {
   } else {
     errorMessage.style.opacity = '0';
     email.style.background = 'none';
+    email.style.border = '1px solid rgb(206, 150, 150)';
   }
   // Reset email field
   email.value = '';
