@@ -23,19 +23,26 @@ main {
 }
 
 .hero {
-  padding-left: 10rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 38rem;
-      grid-template-columns: 1fr 38rem;
+      grid-template-areas: 'nav image' 'info image' 'info image';
+  padding-left: 10rem;
+}
+
+.hero nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: nav;
+  padding: 3.75rem 0 0 0;
+  margin-top: 2rem;
 }
 
 .hero .info {
-  padding: 4rem 13rem 0 0;
-}
-
-.hero .info nav {
-  margin-bottom: 8rem;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: info;
+  padding-right: 13rem;
 }
 
 .hero .info .information {
@@ -44,32 +51,31 @@ main {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   grid-gap: 2.5rem;
-  position: relative;
 }
 
-.hero .info .information span {
+.hero .info span {
   font-size: 3rem;
   font-weight: 300;
   color: #ce9696;
   letter-spacing: 1.7rem;
 }
 
-.hero .info .information h1 {
+.hero .info h1 {
   font-size: 3rem;
   font-weight: 600;
   letter-spacing: 1.7rem;
 }
 
-.hero .info .information p {
+.hero .info p {
   line-height: 1.8rem;
   color: #ce9696;
 }
 
-.hero .info .information form {
+.hero .info form {
   position: relative;
 }
 
-.hero .info .information form input {
+.hero .info form input {
   padding: 1.1rem;
   border-radius: 2rem;
   width: 100%;
@@ -77,27 +83,27 @@ main {
   font-size: .9rem;
 }
 
-.hero .info .information form input::-webkit-input-placeholder {
+.hero .info form input::-webkit-input-placeholder {
   font-size: .9rem;
   color: #ce9696;
 }
 
-.hero .info .information form input:-ms-input-placeholder {
+.hero .info form input:-ms-input-placeholder {
   font-size: .9rem;
   color: #ce9696;
 }
 
-.hero .info .information form input::-ms-input-placeholder {
+.hero .info form input::-ms-input-placeholder {
   font-size: .9rem;
   color: #ce9696;
 }
 
-.hero .info .information form input::placeholder {
+.hero .info form input::placeholder {
   font-size: .9rem;
   color: #ce9696;
 }
 
-.hero .info .information form button {
+.hero .info form button {
   position: absolute;
   top: 0;
   right: 0;
@@ -111,7 +117,10 @@ main {
           box-shadow: 0rem 1.5rem 2rem rgba(206, 150, 150, 0.4);
 }
 
-.hero .hero-image img {
-  width: 100%;
+.hero .hero-image {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: image;
 }
 /*# sourceMappingURL=main.css.map */
