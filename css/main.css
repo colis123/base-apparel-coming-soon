@@ -117,6 +117,21 @@ main {
           box-shadow: 0rem 1.5rem 2rem rgba(206, 150, 150, 0.4);
 }
 
+.hero .info form button:hover {
+  background: #f7bebe;
+  opacity: .7;
+}
+
+.hero .info form .error {
+  margin-top: .75rem;
+  text-align: left;
+  font-size: 14px;
+  margin-left: 1rem;
+  opacity: 0;
+  -webkit-transition: opacity 500ms ease-in;
+  transition: opacity 500ms ease-in;
+}
+
 .hero .hero-image {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
@@ -157,6 +172,25 @@ main {
   .hero .info span {
     font-size: 2rem;
     letter-spacing: .7rem;
+  }
+  .hero .info form .error {
+    margin-top: .75rem;
+    text-align: left;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 550px) {
+  .hero nav img {
+    width: 135px;
+  }
+  .hero .info form button {
+    width: 4rem;
+  }
+  .hero .info form .error {
+    margin-top: .75rem;
+    text-align: left;
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=main.css.map */

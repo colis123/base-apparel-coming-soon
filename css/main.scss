@@ -81,6 +81,13 @@ main {
           font-size: .9rem;
           color: $desat-red;
         }
+
+        // &:invalid {
+        //   background: url(../images/icon-error.svg);
+        //   background-position: 75%;
+        //   background-repeat: no-repeat;
+
+        // }
       }
 
       button {
@@ -94,7 +101,23 @@ main {
         background: $gradient-2;
         cursor: pointer;
         box-shadow: 0rem 1.5rem 2rem rgba(206, 150, 150, .4);
+
+        &:hover {
+          background: rgb(247, 190, 190);
+          opacity: .7;
+        }
       }
+
+      // Error text
+      .error {
+        margin-top: .75rem;
+        text-align: left;
+        font-size: 14px;
+        margin-left: 1rem;
+        opacity: 0;
+        transition: opacity 500ms ease-in;
+      }
+
     }
   }
 
@@ -148,7 +171,42 @@ main {
         letter-spacing: .7rem;
       }
 
+      form {
+        .error {
+          margin-top: .75rem;
+          text-align: left;
+          font-size: 14px;
+        }
+      }
+
     }
 
+  }
+}
+
+@media (max-width: 550px) {
+  .hero {
+
+    nav {
+      img {
+        width: 135px;
+      }
+    }
+
+    .info {
+
+      form {
+
+        button {
+          width: 4rem;
+        }
+
+        .error {
+          margin-top: .75rem;
+          text-align: left;
+          font-size: 14px;
+        }
+      }
+    }
   }
 }
