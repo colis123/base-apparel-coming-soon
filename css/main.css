@@ -59,12 +59,14 @@ main {
   font-weight: 300;
   color: #ce9696;
   letter-spacing: 1.7rem;
+  text-transform: uppercase;
 }
 
 .hero .info h1 {
   font-size: 3rem;
   font-weight: 600;
   letter-spacing: 1.7rem;
+  text-transform: uppercase;
 }
 
 .hero .info p {
